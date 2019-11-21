@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>World of Pizza!</title>
+<link rel="shortcut icon" href="images/pizza.png" type="image/png">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" type="text/css" href="pizza.html">
+<link rel="stylesheet" type="text/css" href="drinks.html">
+<link rel="stylesheet" type="text/css" href="salads.html">
+</head>
+<body>
+	<div class="header">
+		<div class="header_section">
+			<div class="header_item headerlogo">
+				Pizza Delivery!
+			</div>
+			<div class="header_item headerButton"><a href="pizza.html">Pizza</a>
+			</div>
+			<div class="header_item headerButton"><a href="drinks.html">Drinks</a>
+			</div>
+			<div class="header_item headerButton"><a href="salads.html">Salads</a>
+			</div>
+		</div>
+		<div class="header_section">
+			
+			<div class="header_item headerButton"><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><img src="images/iconfinder_Rounded-31_2024644.png"></button></div> 
+			 <div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="images/iconfinder_pizza_box-y_86557.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember">Remember me</label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+
+var modal = document.getElementById('id01');
+
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+		</div>
+	</div>
+
+	<div class="clear"><br></div>
+<center>
+	<div id="menu">Sections<hr></div>
+	<div id="menuHrefs">
+	</div>
+</center>
+<div id="wrapper">
+	<div id="articles">
+		<article>
+			<img src="images/picca.jpg" alt="Pizza" title="Pizza">
+			<h2>Pizza</h2>
+			<p>Choose your Pizza!</p>
+			<a href="pizza.html" title="See more">See more!</a>
+		</article>
+		<article>
+			<img src="images/coke.jpg" alt="Drinks" title="Drinks">
+			<h2>Drinks</h2>
+			<p>Choose your Drinks!</p>
+			<a href="drinks.html" title="See more">See more!</a>
+		</article>
+		<article>
+			<img src="images/salad.jpg" alt="Salads" title="Salads">
+			<h2>Salads</h2>
+			<p>Choose your Salads!</p>
+			<a href="salads.html" title="See more">See more!</a>
+		</article>
+
+	</div>
+<div class="footer">
+	<p>Contacts: +998908000000 <br>Instagram: @pizzadelivery</p>
+</div>
+<div class="footer2">
+	<p>Facebook: pizza_delivery <br>Telegram: @pizzadelivery <br>This web site was created to fulfill Web Technologies module’s requirements and does not represent actual company or service.</p></div>
+</body>
+</html>
